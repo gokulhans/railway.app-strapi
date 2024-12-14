@@ -26,6 +26,12 @@
       "type": "date",
       "required": true,
       "default": "2000-01-01"
+    },
+    "hotels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::hotel.hotel",
+      "mappedBy": "customers"
     }
   }
 }
