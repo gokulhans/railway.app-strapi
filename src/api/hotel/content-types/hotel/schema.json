@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
     "customers": {
@@ -23,8 +23,15 @@
     },
     "slug": {
       "type": "uid",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "default": "91",
       "required": true,
-      "targetField": "Name"
+      "maxLength": 12,
+      "unique": true,
+      "minLength": 12
     }
   }
 }
